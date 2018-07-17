@@ -1,3 +1,16 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 375px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-top: solid;
+    border-top-color: black;
+}
+
 .nav-border {
     border-right: solid;
     border-color: lightslategray;
