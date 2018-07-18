@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
 //define the things to populate
 var menuArray = [
     {
