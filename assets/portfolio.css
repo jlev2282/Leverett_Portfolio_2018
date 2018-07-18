@@ -1,36 +1,4 @@
-/* nav {
-    border-bottom: solid;
-    border-bottom-color: green;
-}
-.content {
-    background-color: darkseagreen;
-    margin-bottom: 75px;
-}
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
-    text-align: center;
-    border-top: solid;
-    border-top-color: green;
-}
 
-.nav-border {
-    border-right: solid;
-    border-color: lightslategray;
-}
-
-#navbar {
-    padding-right: 20px;
-}
-
-#logo {
-    font-size: 30px;
-    color: #0f0f0f;
-} */
 .options {
     min-height: 30vh;
     border-bottom: solid;
