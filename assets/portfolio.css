@@ -56,3 +56,18 @@
     padding: 10px;
 }
 
+.secondaryDisplay {
+    min-height: 20vh;
+    border: solid;
+    border-color: lightblue;
+    border-radius: 5px;
+    border-width: thin;
+    margin-bottom: 12px;
+}
+
+.display-image {
+    width: 100%;
+}
+
+#secondary-display-area {
+}
