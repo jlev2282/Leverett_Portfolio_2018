@@ -36,6 +36,7 @@
 .display-image {
     width: 100%;
     border-radius: 10px;
+    max-height: 50vh;
 }
 
 #secondary-display-area {
