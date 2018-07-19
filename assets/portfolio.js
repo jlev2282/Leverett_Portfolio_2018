@@ -139,14 +139,18 @@ $(document).ready(function(){
 
 });
 
-function changeBackground(object){
-    var backColor  = object.style["background-color"];
-    if (backColor == "") {
-        object.style.backgroundColor = "green";
-    } else {
-        object.style.backgroundColor = "";
-    }
+function growFont(object){
+    object.style["font-size"] = "18px";
+    object.style["font-weight"] = "bold";
+
 }
+
+function shrinkFont(object){
+    object.style["font-size"] = "";
+    object.style["font-weight"] = "";
+
+}
+
 
 function testButton(object) {
     console.log(object);
