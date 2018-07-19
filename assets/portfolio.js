@@ -34,7 +34,11 @@ $(document).ready(function(){
     var menuArrays = [ mainOptions, portfolioOptions];
 
 
-    var pageContent = [];
+    var pageContent = {
+            About: {
+                "message" : "Hello, My name is John Leverett and I'm new to web development. After working in sales for 10 years and not feeling fulfilled, I decided to go back to school to learn a new skill, web development. I like web development because I believe very much that technology and more specifically, the internet, is where the majority of business will be done in the future. Keeping that in mind, most of the jobs will be focused or dependent around the internet as well. I am a hard worker, and a great team mate. I was a 4 year collegiate athelete in football at Davidson College where I was both an All American and elected captain by my fellow teamates. These two traits show my ability to work hard towards a goal, and to gain the respect of my peers as a leader. I believe that I will be an invaluable asset to your organization, and look forward to speaking with you in the near future. Please take a moment to browse my portfolio, and if you have any questions, do not hesistate to hit the contact button to reach out to me. Thanks again for stopping by and let's face the future together!",
+            }
+        };
 
     var page = ["About", "Portfolio", "Contact"];
 
