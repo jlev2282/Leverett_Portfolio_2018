@@ -128,7 +128,27 @@ $(document).ready(function(){
     $(".refresh").click(function(){
         console.log("I'm connected here sir");
     });
+
+
     // populatePage(menuArrays, pageContent);
+    function Button(){
+        alert("Hey I was clicked");
+        console.log(this);
+    }
 
 
 });
+
+function changeBackground(object){
+    var backColor  = object.style["background-color"];
+    if (backColor == "") {
+        object.style.backgroundColor = "green";
+    } else {
+        object.style.backgroundColor = "";
+    }
+}
+
+function testButton(object) {
+    console.log(object);
+
+}
