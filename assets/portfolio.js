@@ -28,9 +28,8 @@ $(document).ready(function(){
 
         }
     ];
-    var portfolioOptions = [
 
-        ];
+    var portfolioOptions = [];
 
     var menuArrays = [ mainOptions, portfolioOptions];
 
@@ -71,36 +70,35 @@ $(document).ready(function(){
     ];
 
     var accomplishments = [
-        {
-
-        }
     ];
 
     //a for loop that grabs each index from menuArray and creates a div with class "row"
     //creates
     function populateMenu(array){
-        console.log("I'm here");
 
         for (i=0; i< array.length; i++) {
             //creates menu options
             if (array[i] == mainOptions) {
-                var $newlist = $("<ul>");
+                // example of what you are creating here
+                // <li>
+                // <p><a href="#"><i class="fas fa-folder"> </i></a>My Portfolio</p>
+                // </li>
+                var $newlist = $("<li>");
                 menuOptions = array[i];
                 for (j =0; j < menuOptions.length; j++) {
-                    var listItem = $("<li>");
-                    var listItemP = $("<p>");
-                    var listItemA = $("<a>");
-                    var listItemI = $("<i>");
+                    var listItemP = $("<p></p>");
+                    var listItemA = $("<a></a>");
+                    var listItemI = $("<i></i>");
 
                     listItemI.attr("class", menuOptions[j]['glyph']);
-                    listItemA.html(listItemI);
-                    listItemA.attr("href", menuOptions[j]['href']);
-                    listItemP.html(listItemA+menuOptions[j]['label']);
-                    listItem.html(listItemP);
-                    $newlist.html(listItem);
-                    $("#main-options").append($newlist);
-
-                    console.log(listItem);
+                    listItemA.text(listItemI+""+menuOptions[j]['label']);
+                    console.log(listItemA);
+                    // listItemA.html(listItemI);
+                    // listItemA.attr("href", menuOptions[j]['href']);
+                    // listItemP.html(listItemA+menuOptions[j]['label']);
+                    // listItem.html(listItemP);
+                    // $newlist.html(listItem);
+                    // $("#main-options").append($newlist);
 
                 }
 
@@ -119,7 +117,7 @@ $(document).ready(function(){
         populateContent(content);
     }
 
-    // populatePage(menuArrays, pageContent);
+    populatePage(menuArrays, pageContent);
 
 
 });
