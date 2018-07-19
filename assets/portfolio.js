@@ -85,14 +85,17 @@ $(document).ready(function(){
                 // </li>
                 var $newlist = $("<li>");
                 menuOptions = array[i];
+                console.log(menuOptions);
                 for (j =0; j < menuOptions.length; j++) {
-                    var listItemP = $("<p></p>");
-                    var listItemA = $("<a></a>");
-                    var listItemI = $("<i></i>");
+                    var listItemP = $("<p>");
+                    var listItemA = $("<a>");
+                    var listItemI = $("<span>");
 
                     listItemI.attr("class", menuOptions[j]['glyph']);
-                    listItemA.text(listItemI+""+menuOptions[j]['label']);
+                    listItemA.prepend(listItemI);
                     console.log(listItemA);
+                    document.getElementById("main-options").innerHTML = "<li>Click"+listItemA[0]+"</li>";
+                    // listItemA.text(listItemI+""+menuOptions[j]['label']);
                     // listItemA.html(listItemI);
                     // listItemA.attr("href", menuOptions[j]['href']);
                     // listItemP.html(listItemA+menuOptions[j]['label']);
@@ -117,7 +120,11 @@ $(document).ready(function(){
         populateContent(content);
     }
 
-    populatePage(menuArrays, pageContent);
+    //on click event that refreshes content section with specified content
+    $(".refresh").click(function(){
+        console.log("I'm connected here sir");
+    });
+    // populatePage(menuArrays, pageContent);
 
 
 });
