@@ -142,13 +142,14 @@ $(document).ready(function(){
 function growFont(object){
     object.style["font-size"] = "18px";
     object.style["font-weight"] = "bold";
+    object.style["color"] = "#4286f4";
 
 }
 
 function shrinkFont(object){
     object.style["font-size"] = "";
     object.style["font-weight"] = "";
-
+    object.style["color"] = "";
 }
 
 

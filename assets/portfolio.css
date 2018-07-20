@@ -39,6 +39,12 @@
     max-height: 50vh;
 }
 
+.social-media-image {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
 #secondary-display-area {
     margin: 8px;
 
@@ -55,4 +61,8 @@ li {
 
 i {
     margin-right: 6px;
+}
+
+.text-aligned {
+    text-align: right;
 }
