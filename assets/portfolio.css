@@ -67,7 +67,7 @@ i {
     text-align: right;
 }
 
-.parallax1 {
+.parallax3 {
     /* The image used */
     background-image: url("highquality/blackhole.jpg");
 
@@ -95,7 +95,7 @@ i {
     background-size: cover;
 }
 
-.parallax3 {
+.parallax1 {
     /* The image used */
     background-image: url("highquality/delicate-arch-night-stars-landscape.jpg");
 
